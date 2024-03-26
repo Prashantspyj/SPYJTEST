@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Management System</title>
+
+<link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+</head>
+<body>
+	
+
+    <div class="container">
+        <h2>SPYJ Employee Management System</h2>
+        <hr>
+        <h3>Update the Employee details</h3>
+ 
+         <form action="#" th:action="@{/save}" th:object="${employee}"
+            method="POST">
+            
+            <input type="text" th:field="*{first_name}" placeholder="Employee First Name"class="form-control mb-4 col-4">
+            <input type="text"th:field="*{last_Name}" placeholder="Employee lastName"class="form-control mb-4 col-4">
+            <input type="email" th:field="*{email}" placeholder="Employee Email"class="form-control mb-4 col-4">
+            <input type="text" th:field="*{working_days}" placeholder="Employee WorkingDays"class="form-control mb-4 col-4">
+            <input type="text" th:field="*{emp_leave}" placeholder="Employee EmployeeLeaves"class="form-control mb-4 col-4">
+            <input type="text" th:field="*{mobile_number}" placeholder="Employee MobileNumber"class="form-control mb-4 col-4">
+            <input type="text"th:field="*{report_head}" placeholder="Employee Reporting Head"class="form-control mb-4 col-4">
+            <input type="text"th:field="*{remark}" placeholder="Remark"class="form-control mb-4 col-4">
+          
+          
+                                   
+            
+            <button type="submit" class="btn btn-info col-2">Save Employee</button>
+        
+        </form>
+        <hr>
+        
+             <a th:href = "@{/}"class="btn btn-primary btn-sm mb-3" >Back to Employee List</a>
+    </div>
+    
+    
+  
+</body>
+
+
+
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+ <section data-bs-version="5.1" class="pricing02 cid-sRQMg9ltnT mbr-parallax-background" id="pricing02-b" style="z-index: 0; background-image: none; position: relative;">
+
+    
+
+ 
+
+    <div class="container-fluid">
+        <div class="wrapper">
+            <div class="row title-section">
+                <h1 style="color:rgb(26, 173, 230);">Travel Services	</h1>
+                
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+							 <strong>Flight Booking</strong>
+                            <div class="mb-3 d-flex align-items-center">
+								
+                                <img src="https://b2c.planyourjourney.com/wp-content/uploads/2020/04/Flight-Booking.png" alt="" class="col-img" width="200" height="200">
+                                <h4 class="card-title mbr-section-subtitle mbr-fonts-style m-0 display-5">
+                                   
+                                </h4>
+                            </div>
+                            <p clas"mbr-text text1 mbr-fonts-style mb-4 display-7">
+                                 We have partnered with leading airlines to bring you the most affordable and flexible
+                                 flight options to India. Whether you require direct flights or connecting flights,
+                                 our booking platform will assist you in finding the best deals tailored to your preferences.
+                                 For booking flights
+                            </p>
+                            
+                            <div class="mbr-section-btn mb-3"><a class="btn btn-primary justify-content-center display-4" href="https://www.planyourjourney.com/">
+                                    Book Now
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+							 <strong>Hotel Booking</strong>
+                            <div class="mb-3 d-flex align-items-center">
+                                <img src="https://b2c.planyourjourney.com/wp-content/uploads/2020/04/Hotel-Booking.png"alt="" class="col-img" width="200" height="200">
+                                   
+                                </h4>
+                            </div>
+                            <p class="mbr-text text1 mbr-fonts-style mb-4 display-7">
+                                Choose from a wide range of accommodations, including luxury hotels, cozy guesthouses, and budget-friendly options. Rest assured, we will secure the most competitive rates to suit your needs.For booking hotels
+                            </p>
+                            
+                            <div class="mbr-section-btn mb-3"><a class="btn btn-primary justify-content-center display-4" href="https://www.planyourjourney.com/">
+                                    Book Now
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+							 <strong>Car Booking</strong>
+                            <div class="mb-3 d-flex align-items-center">
+                                <img src="https://b2c.planyourjourney.com/wp-content/uploads/2020/04/Car-Booking-1.png"alt="" class="col-img" width="200" height="200">
+                                   
+                                </h4>
+                            </div>
+                            <p class="mbr-text text1 mbr-fonts-style mb-4 display-7">
+                                Discover India at your own pace with our car rental services. Choose from a variety of well-maintained vehicles and explore the country's beauty with comfort and freedom. For booking a car
+                            </p>
+                            
+                            <div class="mbr-section-btn mb-3"><a class="btn btn-primary justify-content-center display-4" href="https://www.planyourjourney.com/">
+                                    Book Now
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+							 <strong>India Medical Visa (eVisa for India for Medical Purposes)</strong>
+                            <div class="mb-3 d-flex align-items-center">
+                                <img src="assets/images/purple.svg" alt="" class="col-img">
+                                <h4 class="card-title mbr-section-subtitle mbr-fonts-style m-0 display-5">
+                                   
+                                </h4>
+                            </div>
+                            <p class="mbr-text text1 mbr-fonts-style mb-4 display-7">
+                               
+
+All details,conditions and requirements that you need to know about the Indian Medical Visa are available here. Please apply for this Indian Medical Visa if you are arriving for a medical treatment.
+As a patient seeking medical treatment in another country, the last thought on your mind should be the loops you would have to go through in order to get your Visa for the visit.
+Especially in the situation of some emergency where urgent medical care is required it would be quite a hurdle to have to visit the Embassy of that country so as to procure the Visa on which you can visit that country for medical treatment<span id="dots">...</span><span id="more">
+.That is why it’s extremely helpful that the Government of India has made available an electronic or e-Visa meant specifically for international visitors to the country who have arrived due to medical purposes. You can <a href="https://www.india-visa-online.org/visa" style="color: rgb(57, 172, 224);">apply for the Medical Visa for India online</a> instead of having to go to the local Indian Embassy in your country in order to get it for your visit to India.<a href="https://www.india-visa-online.org/application-for-indian-e-visa-online" style="color: rgb(57, 172, 224);">Application for Indian Medical Visa</a> must be made online. </p>
+<DIV>
+<B> Medical Insurance :</B> For added peace of mind during your medical journey, we also offer comprehensive medical insurance options tailored to your specific needs. Rest assured that you'll be covered for any unforeseen medical expenses, providing an extra layer of protection and support throughout your stay in India.
+                            
+                            </DIV>
+                            <div class="mbr-section-btn mb-3"><a class="btn btn-primary justify-content-center display-4" href="index.html#form04-a">
+                                    Click Now
+                                </a>
+                                
+                                
+                                </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="jarallax-container-1" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;"><div style="background-position: 50% 50%; background-size: cover; background-repeat: no-repeat; background-image: url(&quot;https://mobirise.com/extensions/preschoolm5/preschool-education/assets/images/bg3-1920x1380.jpg&quot;); position: absolute; top: 0px; left: 0px; width: 1349px; height: 608.147px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: -91.0734px; transform: translate3d(0px, 183.88px, 0px);"></div></div></section>
+ 
+</html>
